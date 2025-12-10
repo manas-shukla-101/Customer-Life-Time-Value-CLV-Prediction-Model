@@ -35,29 +35,53 @@ The graph shows the distribution of CLV scores for different customer segments. 
 online_retail_analysis/
 │
 ├── main.py                 # Main execution script
+
 ├── config.py               # Configuration
+
 ├── requirements.txt        # Dependencies
+
 ├── data.csv                # Data file
+
 ├── README.md               # Documentation
+
 ├── data/
+
 │   ├── __init__.py
+
 │   ├── loader.py
+
 │   └── cleaner.py
+
 ├── features/
+
 │   ├── __init__.py
+
 │   └── rfm.py
+
 ├── models/
+
 │   ├── __init__.py
+
 │   └── trainer.py
+
 ├── models/
+
 │   ├── __init__.py
+
 │   ├── analysis_panel.py
+
 │   ├── data_panel.py
+
 │   ├── main_window.py
+
 │   └── results_panel.py
+
 ├── visualization/
+
 │   ├── __init__.py
+
 │   └── plots.py
+
 └── utils/
     ├── __init__.py
     ├── helper.py
@@ -81,18 +105,31 @@ pandas>=1.5.0
 ## Usage:
 
 Step 1: run main.py
+
 Step 2: There will be option to create virtual environment and install dependencies.
+
 Step 3: Run main.py again to start the application.
+
 Step 4: If you want to use your own data, replace data.csv with your data file.
+
 Step 5: Run main.py again to start the application.
+
 Step 6: Now select the option to load data from csv file.
+
 Step 7: If you want to view the data, select the option to view data.
+
 Step 8: If you want to perform analysis, select the option to perform analysis.
+
 Step 9: In analysis panel, select the option to perform RFM analysis.
+
 Step 10: In RFM analysis panel, select the option to view RFM scores.
+
 Step 11: Now click train model button to train the model.
+
 Step 12: To see result, click on the result button.
+
 Step 13: Now you can view the result in the result panel.
+
 Step 14: To save the result, click on the save button.
 
 ## Output:
