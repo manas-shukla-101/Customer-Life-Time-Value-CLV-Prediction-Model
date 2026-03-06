@@ -1,137 +1,301 @@
-# Customer Life-Time Value(CLV) Prediction Model
+# 📊 Customer Lifetime Value (CLV) Prediction Model
 
-Customer Lifetime Value(CLV) prediction using Python, RFM analysis and Random Forest Algorithm.
+![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Random%20Forest-green)
+![Pandas](https://img.shields.io/badge/Data%20Analysis-Pandas-yellow?logo=pandas)
+![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-orange?logo=scikitlearn)
+![Matplotlib](https://img.shields.io/badge/Visualization-Matplotlib-blue)
+![Seaborn](https://img.shields.io/badge/Visualization-Seaborn-purple)
+![Status](https://img.shields.io/badge/Project-Completed-success)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-## Objective:
+---
 
-1. Predict the life-time value of customers based on their purchase behaviour to identify high-value customers.
-2. Analyze the RFM (Recency, Frequency, Monetary) scores of customers to understand their purchase patterns.
-3. Use Random Forest Algorithm to build a model that can predict the CLV of customers.
-4. Evaluate the performance of the model using metrics such as Mean Absolute Error (MAE) and R-S quared.
-5. Provide insights using graphs and tables to help business stakeholders make informed decisions.
+# 📌 Overview
 
-## Use:
+Customer Lifetime Value (**CLV**) is a key business metric that helps companies understand how valuable a customer is over the entire duration of their relationship.
 
-Python, Pandas, NumPy, Matplotlib, Scikit-learn, and Seaborn libraries are used to perform the analysis.
-Excel file containing customer data is used as input.
-Kaggle.com dataset is used for reference.
-https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci  is used for reference.
-Random Forest Algorithm is used to build the model.
+This project builds a **Machine Learning model to predict Customer Lifetime Value using RFM analysis and Random Forest Regression**.
 
-## What is Random Forest Algorithm?
+The system analyzes customer purchasing behavior and predicts which customers are **high-value**, allowing businesses to make **data-driven marketing and retention decisions**.
 
-Random Forest Algorithm is an ensemble learning method that combines multiple decision trees to improve the accuracy and robustness of predictions. And it is used for both classification and regression tasks. Also, it is a type of supervised learning algorithm.
+---
 
-## Why we used Random Forest Algorithm?
+## 📑 Table of Contents
 
-Cause, it is a robust and accurate algorithm that can handle large datasets and provide good results even with noisy data. Also, it is easy to implement and interpret. And it can handle both categorical and numerical data. And it is a good choice for regression tasks. And it can handle missing values.
+| Section | Description |
+|---------|-------------|
+| [📌 Overview](#-overview) | Project introduction & CLV definition |
+| [🚀 Key Features](#-key-features) | Core capabilities and functionality |
+| [🎯 Problem Statement](#-problem-statement) | Challenges in customer value identification |
+| [💡 Solution](#-solution) | The RFM & Random Forest approach |
+| [📊 RFM Analysis](#-rfm-analysis) | Breakdown of Recency, Frequency, and Monetary metrics |
+| [🤖 ML Model](#-machine-learning-model) | Random Forest Regression details |
+| [📈 Model Evaluation](#-model-evaluation) | Metrics (MAE and R² Score) |
+| [📊 Visualizations](#-visualizations) | Insights on customer behavior |
+| [🗂 Project Structure](#-project-structure) | Repository organization |
+| [⚙️ Installation](#️-installation) | Step-by-step setup guide |
+| [▶️ Usage](#️-usage) | How to run the application |
+| [📂 Output](#-output) | Data export details |
+| [📚 Dataset](#-dataset) | Source of retail transactions |
+| [🛠 Tech Stack](#-tech-stack) | Tools and libraries used |
+| [📌 Future Improvements](#-future-improvements) | Roadmap for development |
+| [🌐 Socials](#-socials) | Contact and portfolio |
 
-## How to understand the graph?
+---
 
-The graph shows the distribution of CLV scores for different customer segments. The x-axis represents the CLV score, and the y-axis represents the frequency of customers in each segment. The graph is divided into three segments: low CLV (0-100), medium CLV (100-500), and high CLV (500-1000). The graph shows that most customers have a low CLV, while a smaller percentage of customers have a high CLV.  This suggests that the company may need to focus on retaining and upselling to its high-value customers in this sample data.
+# 🚀 Key Features
 
-## Project Structure:
+✔ Customer segmentation using **RFM Analysis**  
+✔ Machine Learning model for **CLV prediction**  
+✔ Interactive **analysis panels**  
+✔ Automatic **data cleaning pipeline**  
+✔ Visualization of **customer behavior patterns**  
+✔ Export results to **CSV reports**  
+✔ Modular and scalable **Python architecture**
 
+---
+
+# 🎯 Problem Statement
+
+Businesses often struggle to identify:
+
+- Which customers generate the **most long-term value**
+- Which customers are likely to **churn**
+- Where to focus **marketing and retention efforts**
+
+Without predictive insights, companies may spend resources inefficiently.
+
+---
+
+# 💡 Solution
+
+This project solves the problem by:
+
+1. Performing **RFM Analysis**
+2. Engineering customer behavior features
+3. Training a **Random Forest Regression Model**
+4. Predicting **Customer Lifetime Value**
+5. Providing visual insights for **business decisions**
+
+---
+
+# 📊 RFM Analysis
+
+RFM stands for:
+
+| Metric | Meaning |
+|------|------|
+| **Recency** | How recently a customer purchased |
+| **Frequency** | How often a customer purchases |
+| **Monetary** | How much money a customer spends |
+
+Using these metrics, customers can be segmented into groups such as:
+
+- High Value Customers
+- Loyal Customers
+- At Risk Customers
+- Low Value Customers
+
+---
+
+# 🤖 Machine Learning Model
+
+### Algorithm Used
+**Random Forest Regression**
+
+Random Forest is an **ensemble learning algorithm** that combines multiple decision trees to improve prediction accuracy and reduce overfitting.
+
+### Why Random Forest?
+
+✔ Handles large datasets efficiently  
+✔ Works well with **non-linear relationships**  
+✔ Robust to noisy data  
+✔ Reduces overfitting  
+✔ Provides high prediction accuracy
+
+---
+
+# 📈 Model Evaluation
+
+The model performance is evaluated using:
+
+- **Mean Absolute Error (MAE)**
+- **R² Score**
+
+These metrics measure how close the predicted CLV values are to the actual values.
+
+---
+
+# 📊 Visualizations
+
+The project generates graphs to help understand customer behavior:
+
+- CLV distribution
+- Customer segmentation
+- RFM score visualization
+- Purchase patterns
+
+Example insight:
+
+> Most customers fall into the **low CLV segment**, while a small percentage contribute significantly to revenue.
+
+This insight helps businesses focus on **retention and upselling strategies**.
+
+---
+
+## 🗂 Project Structure
+```text
 online_retail_analysis/
 │
-├── main.py                 # Main execution script
-
-├── config.py               # Configuration
-
-├── requirements.txt        # Dependencies
-
-├── data.csv                # Data file
-
-├── README.md               # Documentation
-
-├── data/
-
-│   ├── __init__.py
-
-│   ├── loader.py
-
-│   └── cleaner.py
-
-├── features/
-
-│   ├── __init__.py
-
-│   └── rfm.py
-
-├── models/
-
-│   ├── __init__.py
-
-│   └── trainer.py
-
-├── models/
-
-│   ├── __init__.py
-
-│   ├── analysis_panel.py
-
-│   ├── data_panel.py
-
-│   ├── main_window.py
-
-│   └── results_panel.py
-
-├── visualization/
-
-│   ├── __init__.py
-
-│   └── plots.py
-
-└── utils/
-    ├── __init__.py
-    ├── helper.py
-    ├── progress.py
+├── main.py                 # Main execution script  
+├── config.py               # Configuration settings  
+├── requirements.txt        # Dependencies  
+├── data.csv                # Input dataset  
+├── README.md               # Documentation  
+│
+├── data/                   # Data processing modules  
+│   ├── __init__.py  
+│   ├── loader.py           # Data loading utilities  
+│   └── cleaner.py          # Data cleaning functions  
+│
+├── features/               # Feature engineering  
+│   ├── __init__.py  
+│   └── rfm.py              # RFM feature generation  
+│
+├── models/                 # Machine learning models  
+│   ├── __init__.py  
+│   └── trainer.py          # Model training logic  
+│
+├── ui/                     # Application interface  
+│   ├── __init__.py  
+│   ├── analysis_panel.py  
+│   ├── data_panel.py  
+│   ├── main_window.py  
+│   └── results_panel.py  
+│
+├── visualization/          # Graphs and charts  
+│   ├── __init__.py  
+│   └── plots.py  
+│
+└── utils/                  # Helper utilities  
+    ├── __init__.py  
+    ├── helper.py  
+    ├── progress.py  
     └── logger.py
+```
 
-## Installation:
+---
 
-requirements.txt
+## ⚙️ Installation
 
-numpy>=1.21.0
-scikit-learn>=1.0.0
-tqdm>=4.0.0
-python-dotenv>=0.19.0
-Pillow>=9.0.0
-ttkthemes>=3.2.0
-matplotlib>=3.6.0
-seaborn>=0.12.0
-pandas>=1.5.0
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/manas-shukla-101/Customer-Life-Time-Value-CLV-Prediction-Model.git 
+cd CLV-Prediction
+```
 
-## Usage:
+### 2️⃣ Create a virtual environment
+```bash
+python -m venv venv
+```
 
-Step 1: run main.py
+### Activate environment
+```bash
+# Windows
+venv\Scripts\activate
 
-Step 2: There will be option to create virtual environment and install dependencies.
+# Mac / Linux
+source venv/bin/activate
+```
 
-Step 3: Run main.py again to start the application.
+### 3️⃣ Install dependencies
+```bash
+pip install -r requirements.txt
+```
 
-Step 4: If you want to use your own data, replace data.csv with your data file.
+---
 
-Step 5: Run main.py again to start the application.
+## ▶️ Usage
+Run the main application:
+```bash
+python main.py
+```
 
-Step 6: Now select the option to load data from csv file.
+### Workflow
 
-Step 7: If you want to view the data, select the option to view data.
+1. Load dataset (CSV)
+2. View dataset summary
+3. Perform **RFM analysis**
+4. Train **Random Forest model**
+5. Visualize results
+6. Export prediction output
 
-Step 8: If you want to perform analysis, select the option to perform analysis.
+---
 
-Step 9: In analysis panel, select the option to perform RFM analysis.
+## 📂 Output
 
-Step 10: In RFM analysis panel, select the option to view RFM scores.
+The application automatically creates an **output directory**.
 
-Step 11: Now click train model button to train the model.
+Example:
 
-Step 12: To see result, click on the result button.
+output/
+└── output.csv
 
-Step 13: Now you can view the result in the result panel.
 
-Step 14: To save the result, click on the save button.
+The file includes:
 
-## Output:
+- Customer ID
+- RFM Scores
+- Predicted CLV
+- Average Order Value
 
-Outputs will be saved in the `output/` directory which will be created in the root directory automatically. The output will be in the form of a CSV file named `output.csv`. The CSV file will contain the RFM scores, the predicted values and average order value.
+---
+
+## 📚 Dataset
+
+Dataset used for reference:
+
+https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci
+
+The dataset contains **real-world online retail transactions** used for CLV prediction.
+
+---
+
+## 🛠 Tech Stack
+
+**Programming Language**
+
+- Python
+
+**Libraries**
+
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- TQDM
+- Pillow
+- TTKThemes
+
+---
+
+## 📌 Future Improvements
+
+- Deploy as a **web application**
+- Integrate with **Power BI**
+- Add **REST API for predictions**
+- Implement **Deep Learning models**
+- Add **customer churn prediction**
+
+---
+---
+**Made with ❤️ by Manas Shukla**
+
+---
+
+## 🌐 Socials:
+[![Portfolio](https://img.shields.io/badge/Portfolio-Website-blue)](https://manas-shukla-portfolio.framer.website) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/manas_shukla_101) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/manas-shukla-006774370) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:shuklamanas8928@gmail.com) 
+
+---
